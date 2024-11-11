@@ -2466,7 +2466,7 @@ p.video-txt-sm {
 .desktoplogo img {
     width: auto;
     max-width: inherit;
-    max-height: 35px;
+    max-height: 80px !important;
 }
 
 .wsmainfull {
