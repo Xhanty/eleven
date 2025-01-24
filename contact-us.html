@@ -103,39 +103,46 @@
                             </p>
                             <h6 class="h6-md">Encuéntranos en:</h6>
                             <ul class="contacts-info-socials ico-25">
-                                <li><a href="https://wa.me/message/OAX6C2U7C4BVD1" target="_blank"><span class="flaticon-whatsapp" style="color: #25d366;"></span></a></li>
-                                <li><a href="https://web.facebook.com/people/Eleven-Consultoria/61562874667200/" target="_blank"><span class="flaticon-facebook" style="color: #3b5998;"></span></a></li>
-                                <li><a href="https://www.instagram.com/eleven_consultoria1" target="_blank"><span class="flaticon-instagram" style="color: #c13584;"></span></a></li>
-                                <li><a href="javascript:void(0);"><span class="flaticon-linkedin-logo" style="color: #0077b5;"></span></a></li>
+                                <li><a href="https://wa.me/message/OAX6C2U7C4BVD1" target="_blank"><span
+                                            class="flaticon-whatsapp" style="color: #25d366;"></span></a></li>
+                                <li><a href="https://web.facebook.com/people/Eleven-Consultoria/61562874667200/"
+                                        target="_blank"><span class="flaticon-facebook"
+                                            style="color: #3b5998;"></span></a></li>
+                                <li><a href="https://www.instagram.com/eleven_consultoria1" target="_blank"><span
+                                            class="flaticon-instagram" style="color: #c13584;"></span></a></li>
+                                <!-- <li><a href="javascript:void(0);"><span class="flaticon-linkedin-logo" style="color: #0077b5;"></span></a></li> -->
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6">
                         <div class="form-wrapper">
-                            <form name="contactform" class="row contact-form" novalidate="novalidate">
+                            <form name="contactform" id="contactform" class="row contact-form">
                                 <div class="col-md-12">
-                                    <input type="text" name="name" class="form-control name"
+                                    <input type="text" required id="name" name="name" class="form-control"
                                         placeholder="Nombre y apellido">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" name="name" class="form-control name" placeholder="Teléfono">
+                                    <input type="text" required id="telefono" name="telefono" class="form-control"
+                                        placeholder="Teléfono">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="email" name="email" class="form-control email"
+                                    <input type="email" required id="email" name="email" class="form-control"
                                         placeholder="Correo de contacto">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="email" name="email" class="form-control email" placeholder="Ciudad">
+                                    <input type="text" required id="ciudad" name="ciudad" class="form-control"
+                                        placeholder="Ciudad">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="email" name="email" class="form-control email" placeholder="Empresa">
+                                    <input type="text" required id="empresa" name="empresa" class="form-control"
+                                        placeholder="Empresa">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea class="form-control message" name="message" rows="6"
+                                    <textarea required class="form-control" id="message" name="message" rows="6"
                                         placeholder="Escribe tu mensaje aquí"></textarea>
                                 </div>
                                 <div class="col-md-12 form-btn">
-                                    <button type="submit" class="btn btn--theme hover--theme submit">Enviar</button>
+                                    <button id="sendform" name="sendform" type="submit" class="btn btn--theme hover--theme submit">Enviar</button>
                                 </div>
                                 <div class="col-lg-12 contact-form-msg">
                                     <span class="loading"></span>
@@ -195,22 +202,22 @@
                             <h6 class="m-title">Eleven consultoría</h6>
                             <ul class="foo-links clearfix">
                                 <li>
-                                    <p><a href="javascript:void(0);">Asesoria Tributaria</a></p>
+                                    <p><a href="services.html">Asesoria Tributaria</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Revisoria Fiscal</a></p>
+                                    <p><a href="services.html">Revisoria Fiscal</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Impuestos internacionales</a></p>
+                                    <p><a href="services.html">Impuestos internacionales</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Valoraciones</a></p>
+                                    <p><a href="services.html">Valoraciones</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Saldos a favor</a></p>
+                                    <p><a href="services.html">Saldos a favor</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Contabilidad</a></p>
+                                    <p><a href="services.html">Contabilidad</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -271,13 +278,13 @@
                             <h6 class="m-title">Legal</h6>
                             <ul class="foo-links clearfix">
                                 <li>
-                                    <p><a href="javascript:void(0);">Política de cookies</a></p>
+                                    <p><a href="about-us.html">Política de cookies</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Condiciones de uso</a></p>
+                                    <p><a href="about-us.html">Condiciones de uso</a></p>
                                 </li>
                                 <li>
-                                    <p><a href="javascript:void(0);">Política de privacidad</a></p>
+                                    <p><a href="about-us.html">Política de privacidad</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -300,12 +307,12 @@
                         </div>
                         <div class="footer-form">
                             <h6>Infórmate</h6>
-                            <form class="newsletter-form">
+                            <form class="newsletter">
                                 <div class="input-group r-06">
                                     <input type="email" class="form-control" placeholder="Correo electrónico" required
                                         id="s-email" />
                                     <span class="input-group-btn ico-15">
-                                        <button type="submit" class="btn color--theme">
+                                        <button id="sendnewsletter" name="sendnewsletter" type="submit" class="btn color--theme">
                                             <span class="flaticon-arrows"></span>
                                         </button>
                                     </span>
@@ -337,10 +344,10 @@
                                         target="_blank"><span class="flaticon-facebook"
                                             style="color: #3b5998;"></span></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="javascript:void(0);"><span class="flaticon-linkedin-logo"
                                             style="color: #0077b5;"></span></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="https://www.instagram.com/eleven_consultoria1" target="_blank"><span
                                             class="flaticon-instagram" style="color: #c13584;"></span></a>
