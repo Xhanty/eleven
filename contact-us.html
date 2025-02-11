@@ -471,8 +471,6 @@
                 return;
             }
 
-            let from = email;
-            let to = "smithhenao2020@gmail.com";
             let subject = "Contacto desde la página web";
             let html = `
                 <div style="font-family: Arial, sans-serif; color: #333;">
@@ -487,28 +485,18 @@
             `;
 
             $.ajax({
-                url: "https://app.mailersend.com/domains",
-                type: "POST",
+                url: "https://elevenconsultoriasas.com/send-email.php",
+                method: "POST",
                 contentType: "application/json",
-                headers: {
-                    Authorization: "Bearer mlsn.88ac193c74e2479dff01298f1944960a379efa089e5baf0b8f581955afe82771",
-                },
                 data: JSON.stringify({
-                    from: { email: from },
-                    to: [{ email: to }],
                     subject: subject,
-                    // text: '',
                     html: html,
                 }),
                 success: function (response) {
-                    if (response == "success") {
                         alert("Mensaje enviado correctamente");
-                        setTimeout(() => {
-                            location.reload();
-                        }, 1000);
-                    } else {
+                    },
+                    error: function (error) {
                         alert("Error al enviar el mensaje");
-                    }
                 },
             });
         });
